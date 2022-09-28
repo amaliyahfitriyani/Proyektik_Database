@@ -5,12 +5,75 @@
     <center>
         <h1>FAKULTAS TEKNIK</h1>
     </center>
-    
-    <h2>Daftar Prodi :</h2>
+    <body>
+
+        <center>
+            <img src="\static\img\ft.png" height="150px">
+        </center>
+    </body>
+
+    <h3 style="background-color: rgba(135, 30, 30, 0.568) ;">Sejarah</h3>
+    <p style="font-family: 'times new roman'">Fakultas Teknik merupakan salah satu fakultas dalam lingkungan Universitas Sultan Ageng Tirtayasa, dimana sejak tahun 2001 Untirta telah menjadi perguruan tinggi negeri berdasarkan Surat Keputusan Presiden Republik Indonesia Nomor 32 tanggal 19 Maret tahun 2001.</p>
+    <p style="font-family: 'times new roman'">{{ gbrumum }}</p>
+    <p style="font-family: 'times new roman'">Kampus FT. Untirta berada dalam Kawasan Industri Cilegon, dimana pada kawasan ini terdapat berbagai macam industri logam berat, kimia, manufacture, engineering dan pembangkit listrik, diantaranya PT. Krakatau Steel & Group, PT. Krakatau Posco, PT. Candra Asri, PT. Asahimas, PT. Tri Polita, PT. PLN (Persero) PLTGU Cilegon, PT. Indonesia Power UBP Suralaya dan sebagainya. Secara geografis, Fakultas Teknik Untirta berada pada gerbang dan lintasan perdagangan Jawa-Sumatera serta lintas perdagangan internasional, yaitu dengan adanya pelabuhan penyeberangan ASDP di Merak serta beberapa pelabuhan internasional diantaranya Cigading, Bojonegara dan Krakatau Bandar Samudra. Secara administratif, Fakultas Teknik Untirta berada di Kota Cilegon dan Provinsi Banten yang terus berkembang.</p>
+    <h3 style="background-color: rgba(135, 30, 30, 0.568) ;">Tentang Fakultas Teknik</h3>
+    <p style="font-family: 'times new roman'">Untuk mewujudkan salah satu Tridarma Perguruan Tinggi, FT Untirta sejak bulan Agustus 1998 menyelenggarakan Program Beasiswa D-1 Operator Industri Kimia yang bekerja sama dengan Asosiasi Industri Kimia (AMC/CMA), Pemerintah Kota Cilegon, dan industri lainnya bagi putra daerah Banten. Program beasiswa yang juga dikenal dengan P3TIK (Program Pendidikan dan Pelatihan Teknisi Industri Kimia) ini telah berjalan selama 17 tahun (data Juli 2015). Hal ini merupakan kegiatan pengabdian masyarakat yang sering disebut sebagai CSR (corporate social responsibility) dan telah meluluskan sekitar 710 orang dengan jumlah alumni yang bekerja sekitar 90 persen di Banten, Jawa Timur, Jakarta, Singapura, dan Timur Tengah.[butuh rujukan] Selain itu, sebagai upaya menyiapkan SDA berkualitas pada bidang IT, Fakultas Teknik Untirta pada tahun ajaran 2005/2010 membuka program Ahli Madya Teknik Komputer dan Multimedia. Program ini berada di bawah naungan Jurusan Teknik Elektro Universitas Sultan Ageng Tirtayasa.</p>
+    <h3 style="background-color: rgba(118, 59, 119, 0.43);">Program Studi</h3>
     
     {% for judul in title %} 
     <li>{{ judul }}</li>
     {% endfor %}
 
+    <style>
+        body {
+          background-image: linear-gradient(to right, #D75281, #A084CA);
+          margin-left: 50px;
+          margin-right: 50px;
+          padding: 0;
+      }
+      
+      nav {
+          top: 0;
+          left: 0;
+          position: fixed;
+          height: 80px;
+          width: 100%;
+          box-sizing: border-box;
+          background: rgba(0, 0, 0, 0.5);
+          border-bottom: 1px solid white;
+      }
+      
+      .logo {
+          float: left;
+          height: 10px;
+          font-size: 36px;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: white;
+          padding: 20px 20px;
+          justify-content: space-around;
+      }
+      
+      nav ul {
+          margin: 0;
+          padding: 0;
+          float: right;
+          list-style: none;
+          display: flex;
+      }
+      
+      nav ul li a {
+          font-size: 15px;
+          font-weight: bold;
+          color: white;
+          line-height: 80px;
+          text-decoration: none;
+          padding: 12px 30px;
+      }
+      nav ul li a:hover {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    }
+    </style>
 
 {% endblock %}
