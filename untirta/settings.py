@@ -47,6 +47,9 @@ INSTALLED_APPS = [
     'pascasarjana',
     'profil',
     'univ',
+    'dosen',
+    'mahasiswa',
+    'staf',
 ]
 
 MIDDLEWARE = [

@@ -25,6 +25,9 @@ from ft.views import prodi7
 from pascasarjana.views import prodi8
 from profil.views import profil
 from univ.views import univ
+from dosen.views import dosen
+from mahasiswa.views import mahasiswa
+from staf.views import staf
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -38,4 +41,7 @@ urlpatterns = [
     path('pascasarjana/', prodi8),
     path('profil/', profil),
     path('univ/', univ),
+    path('dosen/', dosen),
+    path('mahasiswa/', mahasiswa),
+    path('staf/', staf),
 ]
