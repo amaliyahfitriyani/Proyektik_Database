@@ -9,3 +9,5 @@ def univ(request):
     }
   
     return render(request, 'univ.html', konteks)
+
+

@@ -25,9 +25,9 @@ from ft.views import prodi7
 from pascasarjana.views import prodi8
 from profil.views import profil
 from univ.views import univ
-from dosen.views import dosen
-from mahasiswa.views import mahasiswa
-from staf.views import staf
+from dosen.views import dosen, tambah_dosen, ubah_dosen, hapus_dosen
+from mahasiswa.views import hapus_mahasiswa, mahasiswa, tambah_mahasiswa, ubah_mahasiswa
+from staf.views import hapus_staf, staf, tambah_staf, ubah_staf
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -44,4 +44,13 @@ urlpatterns = [
     path('dosen/', dosen),
     path('mahasiswa/', mahasiswa),
     path('staf/', staf),
+    path('tambah-mahasiswa/', tambah_mahasiswa, name='tambah_mahasiswa'),
+    path('mahasiswa/ubah/<int:id_mahasiswa>', ubah_mahasiswa, name='ubah_mahasiswa'),
+    path('mahasiswa/hapus/<int:id_mahasiswa>', hapus_mahasiswa, name='hapus_mahasiswa'),
+    path('tambah-dosen/', tambah_dosen, name='tambah_dosen'),
+    path('dosen/ubah/<int:id_dosen>', ubah_dosen, name='ubah_dosen'),
+    path('dosen/hapus/<int:id_dosen>', hapus_dosen, name='hapus_dosen'),
+    path('tambah-staf/', tambah_staf, name='tambah_staf'),
+    path('staf/ubah/<int:id_staf>', ubah_staf, name='ubah_staf'),
+    path('staf/hapus/<int:id_staf>', hapus_staf, name='hapus_staf'),
 ]

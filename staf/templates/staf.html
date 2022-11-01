@@ -5,6 +5,10 @@
 <body>
     <center>
       <h1>STAFF FAKULTAS KEGURUAN & ILMU PENDIDIKAN</h1>
+      <h3>
+        Data Staf
+        <a href="{% url 'tambah_staf' %}">Tambah</a> 
+    </h3>
     </center>
     <br>
    
@@ -16,13 +20,17 @@
             <th>NAMA</th>
             <th>NIP</th>
             <th>JABATAN</th>
+            <th>Action</th>
         </tr>
         {% for staf in staf %}
           <tr>
               <td>{{staf.no}}</td>
-              <td>{{staf.nama}}</td>
+              <td><a href="{% url 'ubah_staf' staf.id %}">{{staf.nama}}</a></td>
               <td>{{staf.nip}}</td>
               <td>{{staf.jabatan}}</td>
+              <td>
+                <a href="{% url 'hapus_staf' staf.id %}" class="btn btn-danger">Hapus</a>
+              </td>
           </tr>
           {% endfor %}
       
